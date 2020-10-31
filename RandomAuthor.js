@@ -29,18 +29,18 @@ function RandomAuthor() {
    return    (
      <> 
       <h1>{authorName}</h1>
-      <button onClick={ButtonClick} className="randoms">Random <img src={SVG}></img></button>
+      <Link to= '/' >
+         <button onClick={ButtonClick} className="randoms">Random <img src={SVG}></img></button>
+      </Link>
      {quoteList.map(quotes => {
               return <> 
+                   <div className="listQuotes_content">
                        <p className="listQoutes" quotes={quotes}>{quotes.quoteText}</p>
+                   </div>
                      </>
                   }
                )
             }
-            
-   <Link to="/">
-      <button >Back to</button>
-   </Link>
   
 </>
    )

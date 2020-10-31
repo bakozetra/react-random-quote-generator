@@ -10,27 +10,41 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 1140px;
+  background-color: #f2f7f5;
+}
+.random_link {
+  grid-column: 1;
 }
 #root {
   max-width: 100%;
-  width: 50%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr);
+}
+h1 {
+  color:#00473e;
+  box-shadow: #faae2b;
+  grid-column: 2;
 }
 
 .listQoutes {
-  border-left: rgba(247, 223, 148, 1) 0.3rem solid;
   padding-left: 2rem;
-  font-size: 36px;
+  font-size: 20px;
+  padding-right: 2rem;
 }
 
 .NameAuthor {
-  background: rgba(51, 51, 51, 1);
+  background: #00473e;
    width: 600px;
-   height: 140px;
+   height: 100px;
    grid-column: 2;
    margin: 0;
   text-align: initial;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
 }
  
 .NameAuthor span {
@@ -42,14 +56,18 @@ main {
 }
 
 .Container {
-  border: black 2rem solid;
+  border-left:#faae2b 1rem solid;
+  border-bottom: #faae2b 2rem solid;
+  border-top:  #faae2b 2rem solid;
+  border-right: #faae2b 1rem solid;
   border-radius: 10px 10px 10px 10px;
   position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .random {
   border: none;
-  background-color: white;
+  background-color:#f2f7f5;
   text-align: end;
   position: absolute;
   right: 2rem;
@@ -58,9 +76,17 @@ main {
 .randoms {
   position: absolute;
   border: none;
-  background-color: white;
+  background-color: #f2f7f5;
   right: 2rem;
   top: 0;
+}
+.listQuotes_content {
+  background-color: #00473e;
+  color: #f2f7f5;
+  width: 100%;
+  border : rgba(247, 223, 148, 1) 0.5rem  solid;
+  margin-bottom: 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */

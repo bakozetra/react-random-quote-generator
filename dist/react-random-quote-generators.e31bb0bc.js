@@ -33900,7 +33900,8 @@ const RandomQuote = () => {
   }, "Random", /*#__PURE__*/_react.default.createElement("img", {
     src: _refes.default
   })), /*#__PURE__*/_react.default.createElement("h2", null, quote.quoteText), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: `/quote/${quote.quoteAuthor}`
+    to: `/quote/${quote.quoteAuthor}`,
+    className: "random_link"
   }, /*#__PURE__*/_react.default.createElement("button", {
     className: "NameAuthor",
     quote: quote
@@ -33953,19 +33954,21 @@ function RandomAuthor() {
     getAuthor();
   };
 
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, authorName), /*#__PURE__*/_react.default.createElement("button", {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, authorName), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/"
+  }, /*#__PURE__*/_react.default.createElement("button", {
     onClick: ButtonClick,
     className: "randoms"
   }, "Random ", /*#__PURE__*/_react.default.createElement("img", {
     src: _refes.default
-  })), quoteList.map(quotes => {
-    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("p", {
+  }))), quoteList.map(quotes => {
+    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+      className: "listQuotes_content"
+    }, /*#__PURE__*/_react.default.createElement("p", {
       className: "listQoutes",
       quotes: quotes
-    }, quotes.quoteText));
-  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/"
-  }, /*#__PURE__*/_react.default.createElement("button", null, "Back to")));
+    }, quotes.quoteText)));
+  }));
 }
 
 var _default = RandomAuthor;

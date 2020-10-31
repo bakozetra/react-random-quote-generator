@@ -23,7 +23,7 @@ const RandomQuote = () => {
     return <>  
               <button onClick={onButtonClick} className= "random">Random<img src={SVG}></img></button>
               <h2>{quote.quoteText}</h2>
-              <Link to={`/quote/${quote.quoteAuthor}`}>
+              <Link to={`/quote/${quote.quoteAuthor}`} className="random_link">
                   <button className='NameAuthor'quote={quote} >
                     <p>{quote.quoteAuthor}</p>
                     <span>{quote.quoteGenre}</span>
