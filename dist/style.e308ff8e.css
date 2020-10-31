@@ -1,0 +1,66 @@
+body {
+  width: 100%;
+}
+h2 {
+  border-left: rgba(247, 223, 148, 1) 0.3rem solid;
+  padding-left: 2rem;
+}
+main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1140px;
+}
+#root {
+  max-width: 100%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.listQoutes {
+  border-left: rgba(247, 223, 148, 1) 0.3rem solid;
+  padding-left: 2rem;
+  font-size: 36px;
+}
+
+.NameAuthor {
+  background: rgba(51, 51, 51, 1);
+   width: 600px;
+   height: 140px;
+   grid-column: 2;
+   margin: 0;
+  text-align: initial;
+}
+ 
+.NameAuthor span {
+    color: rgba(130, 130, 130, 1);
+}
+
+.NameAuthor p {
+  color: white;
+}
+
+.Container {
+  border: black 2rem solid;
+  border-radius: 10px 10px 10px 10px;
+  position: relative;
+}
+
+.random {
+  border: none;
+  background-color: white;
+  text-align: end;
+  position: absolute;
+  right: 2rem;
+}
+
+.randoms {
+  position: absolute;
+  border: none;
+  background-color: white;
+  right: 2rem;
+  top: 0;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
